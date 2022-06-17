@@ -53,7 +53,7 @@ $(document).ready(function(){
 		$("#size").html(inputtedPizzaSize);
 		const inputtedToppingsArray = $("input:checkbox[name=toppings]:checked").map(function(){
 			return $(this).val()}).get();
-		$("#toppings").text(inputtedToppingsArray);
+		$("#toppings").text(inputtedToppingsArray.join(" "));
 		//making the pizzas	
 		let pizza = new Pizza(inputtedPizzaSize, 0, inputtedToppingsArray);
 		let total = pizza.pizzaCost();
