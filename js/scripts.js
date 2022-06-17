@@ -6,11 +6,6 @@ function Pizza(size, price, toppingsArray) {
 	this.price = price;
 	this.toppingsArray = toppingsArray;
 }
-// Pizza.prototype.newPizza = function () {
-// 	this.toppingsArray = [];
-// 	this.size = "";
-// 	this.price = 0;
-// }
 
 //Cost
 Pizza.prototype.pizzaCost = function () {
@@ -25,36 +20,19 @@ Pizza.prototype.pizzaCost = function () {
 	return this.price;
 }
 
-//Toppings
-// Pizza.prototype.addToppings = function (toppings) {
-// 	this.toppingsArray.push(toppings);
-// 	return this.toppingsArray;
-// }
-
-//Size
-// Pizza.prototype.smallOrLarge = function(pizzaSize) {
-// 	if (pizzaSize === "large"){
-// 		this.size = "large"
-// 	} else {
-// 		this.size = "small"
-// 	}
-// 	return this.size
-// }
-
 //User Interface Logic
 
 $(document).ready(function(){
 	$(".btn").click(function(event){
 		event.preventDefault();
-		$("#confirm-order").show();
-		const inputtedName = $("input#name").val();
-		$(".name").text(inputtedName);
 		const inputtedPizzaSize = $("input:radio[name=size]:checked").val();
-		$("#size").html(inputtedPizzaSize);
+		const inputtedName = $("input#name").val();
 		const inputtedToppingsArray = $("input:checkbox[name=toppings]:checked").map(function(){
 			return $(this).val()}).get();
+		$("#confirm-order").show();
+		$(".name").text(inputtedName);
+		$("#size").html(inputtedPizzaSize);
 		$("#toppings").text(inputtedToppingsArray.join(" "));
-		//making the pizzas	
 		let pizza = new Pizza(inputtedPizzaSize, 0, inputtedToppingsArray);
 		let total = pizza.pizzaCost();
 		$(".price").html(total);
