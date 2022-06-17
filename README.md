@@ -18,7 +18,7 @@
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 
-Describe: Pizza()
+# Describe: Pizza();
 
 Test: "It should create a Pizza object with the property size.
 Code: let pizza = new Pizza("small");
@@ -27,6 +27,16 @@ Expected Output: pizza{size: 'small'}
 Test:"It should create a Pizza object with the properties size and price. 
 Code: let pizza = new Pizza ("small", 16.99);
 Expected Output: pizza {size: 'small', price: 16.99}
+
+# Describe: pizzaCost();
+
+Test: "It should return a price for the pizza at 16.99."
+Code: pizza.pizzaCost();
+Expected Output: 16.99
+
+Test: 
+Code:
+Expected Output:
 
 Test: 
 Code:
