@@ -1,10 +1,10 @@
 # _New Project_
 
-#### By _**Liam Campbell_
+#### By _Liam Campbell_
 
 #### _{Brief description of application}_
 
-![A cartoon image of people voting](img/vote.jpeg)
+![A pizza pie!](img/vote.jpeg)
 
 ## Technologies Used
 
@@ -17,6 +17,13 @@
 ## Description
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+
+Describe: Pizza()
+
+Test: "It should return a Pizza object with the property size.
+Code: pizza = new Pizza("small");
+Expected Output: pizza{size: 'small'}
+
 
 ## Setup/Installation Requirements
 
