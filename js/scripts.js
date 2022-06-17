@@ -49,25 +49,14 @@ $(document).ready(function(){
 		const inputtedName = $("input#name").val();
 		$(".name").text(inputtedName);
 		const inputtedPizzaSize = $("input:radio[name=size]:checked").val();
-			// 	let inputtedToppingsArray = [];
-		// $("input:checkbox[name=toppings]:checked").each(function(){
-		// 	 inputtedToppingsArray.push($(this).val());
-		// 	inputtedToppingsArray.forEach(function(string) {
-		// $("#toppings").append(string + " ");
-		// 	}); 
+		$("#size").html(inputtedPizzaSize);
 		const inputtedToppingsArray = $("input:checkbox[name=toppings]:checked").map(function(){
 			return $(this).val()}).get();
-	
-
+		$("#toppings").text(inputtedToppingsArray);
 		//making the pizzas	
 		let pizza = new Pizza(inputtedPizzaSize, 0, inputtedToppingsArray);
-		inputtedToppingsArray
-		pizza.pizzaCost();
-		console.log(pizza.pizzaCost());
-		console.log(inputtedPizzaSize);
-		console.log(inputtedToppingsArray);
-		console.log(pizza)
+	
+		let total = pizza.pizzaCost();
+		$(".price").html(total);
 	});
-		});
-// 	});
-// });
+});
