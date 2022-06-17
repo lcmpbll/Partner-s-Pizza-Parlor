@@ -48,9 +48,17 @@ Code: let pizza = new Pizza('small', 16.99, ['cheese']);
 			pizza.pizzaCost();
 Expected Output: 22.99
 
-Test: 
-Code:
-Expected Output:
+Test: It should return a price for a large two topping pizza as 21.99."
+Code: let largeTwoToppingPizza = new Pizza('large', 0, ['cheese', 'pepperoni'])
+			largeTwoToppingPizza.pizzaCost();
+Expected Output: 21.99
+
+Test: "It should return the price for a small two topping pizza as 18.99"
+Code: let small2ToppingPizza = new Pizza('small', 0 , ['cheese', 'pepperoni']);
+			small2ToppingPizza.pizzaCost();
+Expected Output: 18.99
+
+
 ## Setup/Installation Requirements
 
 * _Clone the git repository github.com/lcmpbll/voter.git to your desktop_
