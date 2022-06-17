@@ -14,9 +14,10 @@
 	</div>
 	<div class="container">
 		<form id="pizza-order">
-			<label for="name">What's your name Partner?</label>
+			<label for="name"><h3>What's your name Partner?</h3></label>
 			<input id="name" class="form-control" type="text">
 			<div class="radio">
+				<h3>Are you a little hungry or a lot?</h3>
 				<label>
 					<input type="radio" name="size" value="large">
 					Large
@@ -30,7 +31,11 @@
 				<h3>What toppings would you like?</h3>
 				<input type="checkbox" name="toppings" value="cheese"> Cheese<br>
 				<input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+				<input type="checkbox" name="toppings" value="pepperonchinis"> Peperonchinis<br>
+				<input type="checkbox" name="toppings" value="jalepenos"> Jalepenos<br>
+				<input type="checkbox" name="toppings" value="baked Beans"> Baked Beans<br>
 			</div>
+			<button type="submit" class= "btn">Place Order</button>
 		</form>
 		<div id="confirm-order">
 			<p>Order for: <span class="name"> </span></p>

@@ -44,7 +44,7 @@ Pizza.prototype.pizzaCost = function () {
 //User Interface Logic
 
 $(document).ready(function(){
-	$("form#pizza-order").submit(function(event){
+	$(".btn").click(function(event){
 		event.preventDefault();
 		$("#confirm-order").show();
 		const inputtedName = $("input#name").val();
