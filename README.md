@@ -58,7 +58,16 @@ Code: let small2ToppingPizza = new Pizza('small', 0 , ['cheese', 'pepperoni']);
 			small2ToppingPizza.pizzaCost();
 Expected Output: 18.99
 
+# Describe addToppings();
 
+Test:"It should add the new topping "cheese" to pizza toppingsArray."
+Code: let pizza1 = new Pizza('small', 0, []);
+			pizza1.addToppings("cheese");
+Expected Output:['cheese']
+
+Test:
+Code:
+Expected Output:
 ## Setup/Installation Requirements
 
 * _Clone the git repository github.com/lcmpbll/voter.git to your desktop_
