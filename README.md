@@ -64,6 +64,12 @@ Code: let pizza1 = new Pizza('small', 0, []);
 			pizza1.addToppings("cheese");
 Expected Output:['cheese']
 
+# Describe newPizza();
+Test:"It should return a pizza with the values: ('',0,[])
+Code: let pizza10 = new Pizza();
+			pizza10.newPizza();
+Expected Output: Pizza {size: '', price: 0, toppingsArray: Array(0)}
+
 Test:
 Code:
 Expected Output:
