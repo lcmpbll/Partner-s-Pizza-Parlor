@@ -20,47 +20,49 @@ _This webpage allows the user to order a pizza, they can input their name, choos
 
 ### Describe: Pizza();
 
->Test: "It should create a Pizza object with the property size.
+> #### Test: "It should create a Pizza object with the property size.
 >
 >>Code: let pizza = new Pizza("small");
+>
 >>Expected Output: pizza{size: 'small'}
 >
->Test:"It should create a Pizza object with the properties size and price. 
+> #### Test:"It should create a Pizza object with the properties size and price. 
 >
 >>Code: let pizza = new Pizza ("small", 16.99);
+>
 >>Expected Output: pizza {size: 'small', price: 16.99}
 >
->Test: "It should create a Pizza object with the properties size, price, and toppings."
+> #### Test: "It should create a Pizza object with the properties size, price, and toppings."
 >
 >>Code: let pizza = new Pizza('small', 16.99, ['cheese']); pizza;
+>
 >>Expected Output: Pizza {size: 'small', price: 16..99, toppings: Array(1)}
 
 ### Describe: pizzaCost();
 
-Test: "It should return a price for the pizza at 16.99."
-
-Code: pizza.pizzaCost();
-
-Expected Output: 16.99
-
-Test: "It should return a price for a large sized pizza as 19.99"
-
-Code: let largePizza = new Pizza("large", 0);
-
-largePizza.pizzaCost();
-
-Expected Output: 19.99
-
->Test: "It should return a price for a large pizza with one topping as 19.99"
+> #### Test: "It should return a price for the pizza at 16.99."
+>
+>>Code: pizza.pizzaCost();
+>
+>>Expected Output: 16.99
+>
+> #### Test: "It should return a price for a large sized pizza as 19.99"
+>
+>>Code: let largePizza = new Pizza("large", 0);
+>
+>>largePizza.pizzaCost();
+>
+>>Expected Output: 19.99
+>
+> #### Test: "It should return a price for a large pizza with one topping as 19.99"
 >
 >>Code: let pizza = new Pizza('large', 0, ['cheese']);
 >
 >>pizza.pizzaCost();
 >
 >>Expected Output: 19.99
-
-
->Test: It should return a price for a large two topping pizza as 21.99."
+>
+> #### Test: It should return a price for a large two topping pizza as 21.99."
 >
 >>Code: let largeTwoToppingPizza = new Pizza('large', 0, ['cheese', 'pepperoni'])
 >>largeTwoToppingPizza.pizzaCost();
@@ -92,7 +94,7 @@ Code:
 Expected Output:
 ## Setup/Installation Requirements
 
-* _Clone the git repository github.com/lcmpbll/pizza-parlor.git to your desktop_
+* _Clone the git repository github.com/lcmpbll/Partner-s-Pizza-Parlor.git to your desktop_
 * _Navigate to the top level of the directory._
 * _Open index.html in your browser._
 
