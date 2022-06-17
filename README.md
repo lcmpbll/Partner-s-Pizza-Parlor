@@ -28,6 +28,10 @@ Test:"It should create a Pizza object with the properties size and price.
 Code: let pizza = new Pizza ("small", 16.99);
 Expected Output: pizza {size: 'small', price: 16.99}
 
+Test: "It should create a Pizza object with the properties size, price, and toppings."
+Code: let pizza = new Pizza('small', 16.99, ['cheese']); pizza;
+Expected Output: Pizza {size: 'small', price: 16..99, toppings: Array(1)}
+
 # Describe: pizzaCost();
 
 Test: "It should return a price for the pizza at 16.99."
@@ -38,6 +42,10 @@ Test: "It should return a price for a large sized pizza at 19.99"
 Code: let largePizza = new Pizza("large", 0);
 largePizza.pizzaCost();
 Expected Output: 19.99
+
+Test: 
+Code:
+Expected Output:
 
 Test: 
 Code:
