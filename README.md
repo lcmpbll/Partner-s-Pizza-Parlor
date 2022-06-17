@@ -36,7 +36,7 @@ _This webpage allows the user to order a pizza, they can input their name, choos
 >
 >>Code: let pizza = new Pizza('small', 16.99, ['cheese']); pizza;
 >
->>Expected Output: Pizza {size: 'small', price: 16..99, toppings: Array(1)}
+>>Expected Output: Pizza {size: 'small', price: 16.99, toppings: Array(1)}
 
 ### Describe: pizzaCost();
 
