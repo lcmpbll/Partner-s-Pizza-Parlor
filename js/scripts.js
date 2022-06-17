@@ -3,13 +3,13 @@
 function Pizza(size, price, toppings) {
 	this.size = size;
 	this.price = price;
-	this.toppings = toppings;
+	this.toppingsArray = toppingsArray;
 }
 //Cost
 Pizza.prototype.pizzaCost = function () {
 	this.price = 16.99;
-	if (this.size = "large"){
-		this.price = this.price + 3;
+	if (this.size = "large" && this.toppings.length != 0){
+		this.price = this.price + 6;
 	}
 	return this.price;
 }
