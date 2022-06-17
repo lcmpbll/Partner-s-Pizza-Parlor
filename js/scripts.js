@@ -55,7 +55,6 @@ $(document).ready(function(){
 		$("#toppings").text(inputtedToppingsArray);
 		//making the pizzas	
 		let pizza = new Pizza(inputtedPizzaSize, 0, inputtedToppingsArray);
-	
 		let total = pizza.pizzaCost();
 		$(".price").html(total);
 	});

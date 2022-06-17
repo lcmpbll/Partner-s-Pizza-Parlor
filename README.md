@@ -1,10 +1,10 @@
-# _New Project_
+# _Partner's Pizza Parlor_
 
 #### By _Liam Campbell_
 
-#### _{Brief description of application}_
+#### _A pizza ordering webpage_
 
-![A pizza pie!](img/vote.jpeg)
+![A pizza pie!](img/pizza.jpeg)
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This webpage allows the user to order a pizza, they can input their name, choose small or large and choose the toppings. The webpage will then confirm their order with them, displaying their order information and letting them know the price._
 
 # Describe: Pizza();
 
@@ -78,7 +78,7 @@ Expected Output:
 * _Clone the git repository github.com/lcmpbll/pizza-parlor.git to your desktop_
 * _Navigate to the top level of the directory._
 * _Open index.html in your browser._
-* _easy-to-understand_
+
 
 
 
@@ -91,4 +91,4 @@ Expected Output:
 
 _Feel free to reach out via [Github](github.com.lcmpbll) to provide feedback on this project or to view my other projects._
 
-[Copyright](LICENSE) (c) _date_ _author name(s)_
+[Copyright](LICENSE) (c) _06/17/2022_ _Liam Campbell_
