@@ -1,3 +1,8 @@
 #confirm-order {
 	display: none;
 }
+
+.jumbotron {
+	background-color: rgba(165, 15, 15, 0.828);
+	text-align: center;
+}
