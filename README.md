@@ -34,9 +34,10 @@ Test: "It should return a price for the pizza at 16.99."
 Code: pizza.pizzaCost();
 Expected Output: 16.99
 
-Test: 
-Code:
-Expected Output:
+Test: "It should return a price for a large sized pizza at 19.99"
+Code: let largePizza = new Pizza("large", 0);
+largePizza.pizzaCost();
+Expected Output: 19.99
 
 Test: 
 Code:
