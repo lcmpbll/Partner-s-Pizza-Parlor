@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Partner's Pizza Parlor</title>
+	<script src="js/jquery-3.6.0.js"></script>
+	<script src="js/scripts.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>	
+<body>
+	<div class="jumbotron">
+		<h1>Partner's Pizza Parlor</h1>
+		<h2 class="subtitle">Saddle on up and grab a slice!</h2>
+	</div>
+	<div class="container">
+		<form id="pizza-order">
+			<label for="name">What's your name Partner?</label>
+			<input id="name" class="form-control" type="text">
+			<div class="radio">
+				<label>
+					<input type="radio" name="size" value="large">
+					Large
+				</label>
+				<label>
+					<input type="radio" name="size" value="small" checked>
+					Small
+				</label>
+			</div>
+			<div class="form-group">
+				<h3>What toppings would you like?</h3>
+				<input type="checkbox" name="toppings" value="cheese"> Cheese<br>
+				<input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+			</div>
+		</form>
+		<div id="confirm-order">
+			<p>Order for: <span class="name"> </span></p>
+			<p>A <span class="size"> </span> with <span class="toppings"> </span></p>
+			<p>That will be $<span class="price"></span></p>
+		</div>
+	</div> 
+</body>
+</html>

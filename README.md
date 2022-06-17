@@ -31,7 +31,6 @@ Expected Output: pizza {size: 'small', price: 16.99}
 Test: "It should create a Pizza object with the properties size, price, and toppings."
 Code: let pizza = new Pizza('small', 16.99, ['cheese']); pizza;
 Expected Output: Pizza {size: 'small', price: 16..99, toppings: Array(1)}
-
 # Describe: pizzaCost();
 
 Test: "It should return a price for the pizza at 16.99."
@@ -43,10 +42,10 @@ Code: let largePizza = new Pizza("large", 0);
 largePizza.pizzaCost();
 Expected Output: 19.99
 
-Test: "It should return a price for a large pizza with one topping as 22.99"
-Code: let pizza = new Pizza('small', 16.99, ['cheese']);
+Test: "It should return a price for a large pizza with one topping as 19.99"
+Code: let pizza = new Pizza('large', 0, ['cheese']);
 			pizza.pizzaCost();
-Expected Output: 22.99
+Expected Output: 19.99
 
 Test: It should return a price for a large two topping pizza as 21.99."
 Code: let largeTwoToppingPizza = new Pizza('large', 0, ['cheese', 'pepperoni'])
@@ -60,7 +59,7 @@ Expected Output: 18.99
 
 # Describe addToppings();
 
-Test:"It should add the new topping "cheese" to pizza toppingsArray."
+Test:"It should add the inputted topping to pizza toppingsArray."
 Code: let pizza1 = new Pizza('small', 0, []);
 			pizza1.addToppings("cheese");
 Expected Output:['cheese']
@@ -70,8 +69,8 @@ Code:
 Expected Output:
 ## Setup/Installation Requirements
 
-* _Clone the git repository github.com/lcmpbll/voter.git to your desktop_
-* _Navigate to the top level of the directoy._
+* _Clone the git repository github.com/lcmpbll/pizza-parlor.git to your desktop_
+* _Navigate to the top level of the directory._
 * _Open index.html in your browser._
 * _easy-to-understand_
 
