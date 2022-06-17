@@ -20,11 +20,17 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 Describe: Pizza()
 
-Test: "It should return a Pizza object with the property size.
-Code: pizza = new Pizza("small");
+Test: "It should create a Pizza object with the property size.
+Code: let pizza = new Pizza("small");
 Expected Output: pizza{size: 'small'}
 
+Test:"It should create a Pizza object with the properties size and price. 
+Code: let pizza = new Pizza ("small", 16.99);
+Expected Output: pizza {size: 'small', price: 16.99}
 
+Test: 
+Code:
+Expected Output:
 ## Setup/Installation Requirements
 
 * _Clone the git repository github.com/lcmpbll/voter.git to your desktop_
