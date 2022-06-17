@@ -39,3 +39,19 @@ Pizza.prototype.smallOrLarge = function(pizzaSize) {
 	}
 	return this.size
 }
+
+//User Interface Logic
+
+$(document).ready(function(){
+	$("form#pizza-order").submit(function(event){
+		event.preventDefault();
+		$("#confirm-order").show();
+		const inputtedName = $("input#name").val();
+		$(".name").text(inputtedName);
+		const pizzaSize = $("input:radio[name=size]:checked").val();
+		$("input:checkbox[name=toppings]:checked").each(function(){
+			const inputtedToppings = $(this).val();
+			$("#toppings").append(inputtedToppings + " ");
+		})
+	})
+})
