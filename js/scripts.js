@@ -1,15 +1,16 @@
 //Business Logic
+
 //Pizza
 function Pizza(size, price, toppingsArray) {
 	this.size = size;
 	this.price = price;
 	this.toppingsArray = toppingsArray;
 }
-Pizza.prototype.newPizza = function () {
-	this.toppingsArray = [];
-	this.size = "";
-	this.price = 0;
-}
+// Pizza.prototype.newPizza = function () {
+// 	this.toppingsArray = [];
+// 	this.size = "";
+// 	this.price = 0;
+// }
 
 //Cost
 Pizza.prototype.pizzaCost = function () {
@@ -25,20 +26,20 @@ Pizza.prototype.pizzaCost = function () {
 }
 
 //Toppings
-Pizza.prototype.addToppings = function (toppings) {
-	this.toppingsArray.push(toppings);
-	return this.toppingsArray;
-}
+// Pizza.prototype.addToppings = function (toppings) {
+// 	this.toppingsArray.push(toppings);
+// 	return this.toppingsArray;
+// }
 
 //Size
-Pizza.prototype.smallOrLarge = function(pizzaSize) {
-	if (pizzaSize === "large"){
-		this.size = "large"
-	} else {
-		this.size = "small"
-	}
-	return this.size
-}
+// Pizza.prototype.smallOrLarge = function(pizzaSize) {
+// 	if (pizzaSize === "large"){
+// 		this.size = "large"
+// 	} else {
+// 		this.size = "small"
+// 	}
+// 	return this.size
+// }
 
 //User Interface Logic
 

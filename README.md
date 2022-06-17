@@ -69,29 +69,13 @@ _This webpage allows the user to order a pizza, they can input their name, choos
 >
 >>Expected Output: 21.99
 >
->Test: "It should return the price for a small two topping pizza as 18.99"
+> #### Test: "It should return the price for a small two topping pizza as 18.99"
 >
 >>Code: let small2ToppingPizza = new Pizza('small', 0 , ['cheese', 'pepperoni']);
 >>small2ToppingPizza.pizzaCost();
 >
 >>Expected Output: 18.99
 
-### Describe addToppings();
-
-Test:"It should add the inputted topping to pizza toppingsArray."
-Code: let pizza1 = new Pizza('small', 0, []);
-			pizza1.addToppings("cheese");
-Expected Output:['cheese']
-
-### Describe newPizza();
-Test:"It should return a pizza with the values: ('',0,[])
-Code: let pizza10 = new Pizza();
-			pizza10.newPizza();
-Expected Output: Pizza {size: '', price: 0, toppingsArray: Array(0)}
-
-Test:
-Code:
-Expected Output:
 ## Setup/Installation Requirements
 
 * _Clone the git repository github.com/lcmpbll/Partner-s-Pizza-Parlor.git to your desktop_
